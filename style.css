@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    font-family: Montserrat,Helvetica,sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.snap{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.section{
+    height: 69vh;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.navbar{
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    padding: 2vh;
+    background-color: white;
+}
+
+.navbar .wrapper{
+    margin-left: 7.5vw;
+    width: 75vw;
+    justify-content: space-around;
+}
+
+.navbar img{
+    height: 26px;
+    width: auto;
+    cursor: pointer;
+}
+
+.navbar .navigation p{
+    margin: 0px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar .navigation p:hover{
+    color: #19ca99;
+    cursor: pointer;
+}
+
+.navbar .reg{
+    text-decoration: none;
+    border-style: none;
+    cursor: pointer;
+    background-color: #19ca99;
+    padding: 11px 35px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.navbar .reg:hover{
+    color: black;
+    background-color: rgba(245, 242, 242, 0.815);
+}
+
+.part1{
+    background: #bad0d6 url("asset/1.jpg") no-repeat right bottom;
+    background-size: 49%;
+    padding: 12vh 0vw;
+    font-weight: 700;
+}
+
+.part1 .contain{
+    margin-top: 3vh;
+    margin-left: 11vw;
+}
+
+.p1 h1{
+    font-size: 110px;
+    line-height: .85;
+    letter-spacing: -.028em;
+}
+
+.part2 .pagenumber{
+    margin-top: 8vh;
+}
+
+.p1 p{
+    margin-top: 43px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: white;
+}
+
+.p1 .xplore{
+    cursor: pointer;
+    justify-content: start;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 6.4vh 0vw;
+    text-decoration: none;
+    color: black;
+}
+
+.p1 .xplore h2{
+    font-weight: 350;
+    font-size: 32px;
+    margin-right: 2vw;
+}
+
+.p1 .xplore img{
+    width: 1.5vw;
+}
+
+.pagenumber{
+    width: 26vw;
+    
+}
+
+.pagenumber p{
+    font-size: 25px;
+    margin-left: 2vw;
+}
+
+.part2{
+    background: black url("asset/2.jpg") no-repeat right;
+    background-size: 45%;
+    padding: 4vh 0vw 19vh 0vw;
+    font-weight: 700;
+    color: white;
+    /* height: 80vh; */
+}
+
+.part2 .contain{
+    margin-left: 9vw;
+}
+
+.part3{
+    background: white url("asset/3.jpg") no-repeat right bottom;
+    background-size: 45%;
+    margin-top: 0.5vh;
+}
+
+
+.pagenumber pre{
+    color: #bad0d6;
+    margin-left: 2vw;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Playfair Display',"Times New Roman",serif;
+    margin-bottom: 2vh;
+}
+
+.part3{
+    color: black;
+    padding-bottom: 20vh;
+}
+
+.part2 .p2{
+    margin-left: 2vw;
+    padding: 10vh 0vw;
+}
+
+.p2 h1{
+    font-size: 100px;
+}
+
+.p2{
+    margin-bottom: 10vh;
+}
+
+.p1 h3{
+    margin-top: 5vh;
+    line-height: 1.6;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10vh 12vw;
+}
+
+.container .item1{
+    width: 32vw;
+}
+
+.container .item p{
+    font-size: 30px;
+    margin-bottom: 5vh;
+}
+
+.container .item .form{
+    border: 2px solid #19ca99;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    float: none;
+    padding: 25px;
+    width: auto;
+    max-width: 550px;
+}
+
+.container .item .form pre{
+    color: #222222;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-left: 4px;
+    font-weight: 600;
+}
+
+.container .item .form .wrapper{
+    margin-bottom: 10px;
+    width: 95%;
+    background-color: #f7f7ff;
+    padding: 10px;
+    padding-bottom: 0px;
+    font-size: 15px;
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+.container .item .form .wrapper .input-data{
+    height: 30px;
+    width: 100%;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.container .item .form .wrapper .input-data input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #f7f7f7;
+}
+
+.container .item .form .wrapper .input-data textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #f7f7f7;
+}
+
+.container .item .form .wrapper .input-data label{
+    position: absolute;
+    bottom: 7.8px;
+    left: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: darkgrey;
+}
+
+.container .item .form .wrapper .input-data input:focus{
+    outline: none;
+}
+
+.container .item .form .wrapper .input-data input:focus ~ label,
+.container .item .form .wrapper .input-data input:valid ~ label{
+    transform: translateY(-15px);
+    border: none;
+    font-size: 12px;
+    color: darkgrey;
+}
+
+.container .item .form .wrap-email .input-data input:default ~ label{
+    transform: translateY(-15px);
+    border: none;
+    font-size: 12px;
+    color: darkgrey;
+}
+
+.container .item .form .wrap{
+    width: 95%;
+    border: none;
+    position: relative;
+}
+
+.container .item .form .wrap textarea{
+    border: none;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #f7f7f7;
+    outline: none;
+}
+
+.container .item .form .wrap .input-data label{
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    color: darkgrey;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.container .item .form .wrap .input-data textarea:focus ~ label,
+.container .item .form .wrap .input-data textarea:valid ~ label{
+    transform: translateY(-12px);
+    border: none;
+    font-size: 12px;
+    color: darkgrey;
+}
+
+.container .item .form .checkbox input{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+
+.container .item .form .checkbox{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.container .item .form .checkbox div{
+    padding: 0 4px;
+}
+
+.container .item .form .checkbox label{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: lighter !important;
+}
+
+.container .item .form .submit{
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #19CA99;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.container .item .form .submit:hover{
+    background-color: #19ca99;
+    color: white;
+}
+
+.footer{
+    background-color: #101d23;
+    padding: 12vh 12vw;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    display: flex;
+    padding-right: 0;
+    scroll-snap-stop: always;
+	scroll-snap-align: end;    
+    /* scroll-margin: 1vh;
+    scroll-snap-align: end;
+    scroll-snap-type: y proximity; */
+}
+
+.footer .desc{
+    margin-right: 5vw;
+}
+
+.footer .desc img{
+    height: 5vh;
+    width: auto;
+}
+
+.footer .desc .icons img{
+    height: 2.5vh;
+    width: auto;
+}
+
+.footer .desc .icons{
+    margin-top: 5vh;
+}
+
+.footer .desc .credit{
+    margin-top: 20px;
+    color: #84919A;
+    font-size: 13px;
+}
+
+.footer .desc .credit2{
+    color: #B6C1C7;
+    margin-top: 3px;
+    display: flex;
+}
+
+.footer .desc .credit2 li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 2px;
+}
+
+.footer .desc .credit2 li::after {
+    content: '';
+    display: block;
+    margin-top: 2px;
+    width: 0;
+    height: 1px;
+    background: #B6C1C7;
+    transition: width .3s;
+}
+
+.footer .desc .credit2 li:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.footer .submenu{
+    margin: 0 2vw;
+}
+
+.footer .submenu ul, .footer .submenu li{
+    list-style: none;
+    color: white;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.footer .submenu ul{
+    color: #19ca99;
+}
+
+.footer .submenu li{
+    font-weight: 400;
+}
+
+.footer .submenu li:hover{
+    color: #19ca99;
+}
+
+.item2{
+    margin-left: 10vw;
+}
+
+.item2 p{
+    margin: 30px 0;
+    margin-bottom: 0;
+    line-height: 1.3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 21px;
+}
+
